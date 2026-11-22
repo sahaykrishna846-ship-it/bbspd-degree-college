@@ -4,82 +4,340 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B.B.S.P.D. Degree College | Narkatiaganj</title>
+<meta name="description" content="Official website of Brij Bihari Sahay Prabhawati Devi Degree College, Narkatiaganj, West Champaran, Bihar.">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#1e293b}
-
-header{
-background:#102b52;color:white;padding:16px 7%;
-display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-.logo{font-size:22px;font-weight:bold}
-.logo span{display:block;font-size:12px;color:#d6e5ff;margin-top:5px}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{color:white;text-decoration:none;font-size:14px}
-nav a:hover{color:#f5c451}
 
-/* COLLEGE PHOTO HERO */
-.hero{
-padding:120px 8%;
-min-height:550px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-color:white;
-background:
-linear-gradient(rgba(8,24,48,.65),rgba(8,24,48,.72)),
-url('college.png');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #18243b;
+  background: #f7f8fc;
+  line-height: 1.6;
 }
-.hero small{color:#f5c451;font-weight:bold;letter-spacing:2px}
-.hero h1{font-size:46px;max-width:900px;margin:20px 0;line-height:1.2}
-.hero p{max-width:650px;line-height:1.8;color:#e3edff;font-size:17px}
 
-.btn{
-display:inline-block;margin-top:25px;background:#f2bd42;color:#102b52;
-padding:14px 24px;border-radius:5px;text-decoration:none;font-weight:bold
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #10284c;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
-.btn:hover{background:#ffcf60}
 
-section{padding:70px 8%}
-.heading{text-align:center;margin-bottom:40px}
-.heading h2{font-size:32px;color:#102b52;margin-bottom:12px}
-.heading p{color:#64748b}
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.about-box{background:white;padding:35px;border-radius:12px;box-shadow:0 4px 20px #00000008}
-.about-box h3{color:#174d88;margin-bottom:18px}
-.about-box p{line-height:1.8;color:#475569}
+.brand h2 {
+  font-size: 21px;
+  line-height: 1.3;
+}
 
-.blue{background:#eaf1fb}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:white;padding:28px;border-radius:12px;box-shadow:0 4px 20px #00000008}
-.card h3{color:#174d88;margin-bottom:15px}
-.card p{line-height:1.7;color:#64748b}
-.notice{border-left:4px solid #e9b638}
+.brand p {
+  font-size: 12px;
+  color: #d4dfed;
+}
 
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.contact-card{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 20px #00000008}
-.contact-card h3{color:#174d88;margin-bottom:15px}
-.contact-card p{line-height:2;color:#475569}
-.contact-card a{color:#174d88;text-decoration:none}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
 
-footer{background:#102b52;color:white;padding:40px 8%;text-align:center}
-footer p{margin-top:10px;color:#cbd5e1;line-height:1.7}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
 
-@media(max-width:700px){
-header{gap:18px}
-nav{gap:12px}
-.hero{padding:80px 7%;min-height:450px}
-.hero h1{font-size:32px}
-.hero p{font-size:15px}
-section{padding:50px 7%}
-.about,.contact-grid{grid-template-columns:1fr}
-.heading h2{font-size:27px}
+nav a:hover {
+  color: #ffbd59;
+}
+
+.hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 60px 7%;
+  background:
+    linear-gradient(rgba(8,20,40,.65),rgba(8,20,40,.72)),
+    url('COLLEGE.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero .welcome {
+  color: #ffca78;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(32px,5vw,58px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 17px;
+  max-width: 700px;
+  color: #f1f4f8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #f5ae45;
+  color: #10284c;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #ffc96f;
+  transform: translateY(-2px);
+}
+
+section {
+  padding: 75px 7%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  color: #10284c;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #667085;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.about-grid img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+
+.about-text h3 {
+  font-size: 25px;
+  color: #10284c;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #475467;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+  border: 1px solid #edf0f5;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+.card .symbol {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #10284c;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #667085;
+}
+
+.gallery {
+  background: #eef2f8;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+.admission {
+  background: #10284c;
+  color: white;
+  text-align: center;
+}
+
+.admission h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.admission p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  color: #d9e3f2;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.contact-card h3 {
+  margin-bottom: 18px;
+  color: #10284c;
+}
+
+.contact-card p {
+  margin-bottom: 12px;
+  color: #475467;
+}
+
+.contact-card a {
+  color: #164d91;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #091a33;
+  color: white;
+  padding: 35px 7%;
+  text-align: center;
+}
+
+footer p {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+@media(max-width:850px) {
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
+
+@media(max-width:550px) {
+  .cards,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 45px 6%;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  .section-title h2 {
+    font-size: 27px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
 }
 </style>
 </head>
@@ -87,156 +345,214 @@ section{padding:50px 7%}
 <body>
 
 <header>
-<div class="logo">
-B.B.S.P.D. Degree College
-<span>Narkatiaganj, West Champaran, Bihar</span>
-</div>
+  <div class="navbar">
+    <div class="brand">
+      <h2>B.B.S.P.D. Degree College</h2>
+      <p>Narkatiaganj, West Champaran, Bihar</p>
+    </div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#courses">Courses</a>
-<a href="#admission">Admission</a>
-<a href="#notices">Notices</a>
-<a href="#contact">Contact</a>
-</nav>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#admission">Admission</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <!-- HOME -->
-<div class="hero" id="home">
-<small>WELCOME TO OUR COLLEGE</small>
-<h1>Brij Bihari Sahay Prabhawati Devi Degree College</h1>
-<p>A place dedicated to learning, knowledge, academic growth and the development of students.</p>
-<a class="btn" href="#about">Explore Our College</a>
-</div>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="welcome">WELCOME TO OUR COLLEGE</p>
+
+    <h1>Brij Bihari Sahay Prabhawati Devi Degree College</h1>
+
+    <p>
+      A place dedicated to learning, knowledge, academic growth
+      and the development of students.
+    </p>
+
+    <a href="#about" class="btn">Explore Our College</a>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
-<div class="heading">
-<h2>About Our College</h2>
-<p>Education • Knowledge • Opportunity</p>
-</div>
+  <div class="container">
 
-<div class="about">
-<div class="about-box">
-<h3>Welcome to B.B.S.P.D. Degree College</h3>
-<p>
-Brij Bihari Sahay Prabhawati Devi Degree College,
-Narkatiaganj, West Champaran, Bihar, is an educational
-institution dedicated to providing learning opportunities
-and encouraging students to pursue their academic goals.
-</p>
-<p style="margin-top:15px">
-Our aim is to encourage knowledge, discipline, academic
-development and a positive learning environment.
-</p>
-</div>
+    <div class="section-title">
+      <h2>About Our College</h2>
+      <p>Education, knowledge and opportunities for the future.</p>
+    </div>
 
-<div class="about-box blue">
-<h3>Our Vision</h3>
-<p>
-To encourage education, nurture talent, develop knowledge
-and provide students with opportunities for personal and
-academic growth.
-</p>
-</div>
-</div>
+    <div class="about-grid">
+
+      <img src="CAMPUS.jpg" alt="College campus">
+
+      <div class="about-text">
+        <h3>Brij Bihari Sahay Prabhawati Devi Degree College</h3>
+
+        <p>
+          Welcome to B.B.S.P.D. Degree College, Narkatiaganj,
+          West Champaran, Bihar.
+        </p>
+
+        <p>
+          Our institution aims to provide students with an
+          educational environment that encourages learning,
+          discipline, knowledge and personal development.
+        </p>
+
+        <p>
+          We believe education plays an important role in building
+          a confident, responsible and knowledgeable generation.
+        </p>
+
+        <p><strong>Location:</strong> Narkatiaganj, West Champaran, Bihar, India</p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- COURSES -->
-<section class="blue" id="courses">
-<div class="heading">
-<h2>Academic Programmes</h2>
-<p>Explore the academic opportunities available at our college.</p>
-</div>
+<section id="courses" style="background:#eef2f8;">
+  <div class="container">
 
-<div class="cards">
-<div class="card">
-<h3>Bachelor of Arts (B.A.)</h3>
-<p>Undergraduate studies in humanities and social sciences, subject to the college's available programmes.</p>
-</div>
+    <div class="section-title">
+      <h2>Academic Programmes</h2>
+      <p>Explore the academic opportunities available at our institution.</p>
+    </div>
 
-<div class="card">
-<h3>Bachelor of Commerce (B.Com.)</h3>
-<p>Undergraduate studies in commerce and related academic disciplines, subject to availability.</p>
-</div>
-</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="symbol">📚</div>
+        <h3>Arts</h3>
+        <p>
+          Humanities and social science education.
+          Please contact the college for subject availability.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="symbol">📊</div>
+        <h3>Commerce</h3>
+        <p>
+          Commerce and business-related academic studies.
+          Please contact the college for subject availability.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="symbol">🎓</div>
+        <h3>Higher Education</h3>
+        <p>
+          Academic learning and opportunities for students
+          pursuing higher education.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- ADMISSION -->
-<section id="admission">
-<div class="heading">
-<h2>Admission Information</h2>
-<p>Start your academic journey with us.</p>
-</div>
+<section class="admission" id="admission">
+  <div class="container">
 
-<div class="about-box">
-<h3>Admissions</h3>
-<p style="margin-top:15px;line-height:1.8">
-Admission information, eligibility requirements, available
-subjects, application procedures and dates will be announced
-through official college notices.
-</p>
-<a class="btn" href="#contact">Contact College</a>
-</div>
+    <h2>Admission & Enquiry</h2>
+
+    <p>
+      For admission-related information, academic details,
+      subject availability and other enquiries,
+      please contact the college.
+    </p>
+
+    <a href="#contact" class="btn">Contact College</a>
+
+  </div>
 </section>
 
-<!-- NOTICE -->
-<section class="blue" id="notices">
-<div class="heading">
-<h2>Notice Board</h2>
-<p>College announcements and important information</p>
-</div>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
 
-<div class="cards">
-<div class="card notice">
-<h3>Official Notices</h3>
-<p>Admission updates, academic announcements and important notices will be published here.</p>
-</div>
+    <div class="section-title">
+      <h2>College Gallery</h2>
+      <p>A glimpse of our institution.</p>
+    </div>
 
-<div class="card notice">
-<h3>Student Updates</h3>
-<p>Students are advised to keep checking the college website for updates and announcements.</p>
-</div>
-</div>
+    <div class="gallery-grid">
+      <img src="COLLEGE.jpg" alt="College building">
+      <img src="CAMPUS.jpg" alt="College campus">
+      <img src="DOOR.jpg" alt="College entrance">
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<div class="heading">
-<h2>Contact Us</h2>
-<p>We welcome your enquiries.</p>
-</div>
+  <div class="container">
 
-<div class="contact-grid">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>We welcome your enquiries.</p>
+    </div>
 
-<div class="contact-card">
-<h3>College Address</h3>
-<p>
-Brij Bihari Sahay Prabhawati Devi Degree College<br>
-Narkatiaganj, West Champaran<br>
-Bihar, India
-</p>
-</div>
+    <div class="contact-grid">
 
-<div class="contact-card">
-<h3>Contact Numbers</h3>
-<p>
-<a href="tel:9508462733">9508462733</a><br>
-<a href="tel:7766033389">7766033389</a><br>
-<a href="tel:7488220464">7488220464</a>
-</p>
-</div>
+      <div class="contact-card">
+        <h3>College Information</h3>
 
-</div>
+        <p>
+          <strong>College:</strong><br>
+          Brij Bihari Sahay Prabhawati Devi Degree College
+        </p>
+
+        <p>
+          <strong>Location:</strong><br>
+          Narkatiaganj, West Champaran, Bihar, India
+        </p>
+
+        <p>
+          <strong>University:</strong><br>
+          Babasaheb Bhimrao Ambedkar Bihar University (BRABU),
+          Muzaffarpur
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Contact Numbers</h3>
+
+        <p>
+          <a href="tel:9508462733">9508462733</a>
+        </p>
+
+        <p>
+          <a href="tel:7766033389">7766033389</a>
+        </p>
+
+        <p>
+          <a href="tel:7488220464">7488220464</a>
+        </p>
+
+        <p>
+          <strong>For admission and college enquiries, call the numbers above.</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<h3>B.B.S.P.D. Degree College, Narkatiaganj</h3>
-<p>West Champaran, Bihar, India</p>
-<p>Education • Knowledge • Opportunity</p>
-<p style="margin-top:20px">&copy; 2026 B.B.S.P.D. Degree College. All rights reserved.</p>
+  <h3>B.B.S.P.D. Degree College</h3>
+  <p>Narkatiaganj, West Champaran, Bihar, India</p>
+  <p>© 2026 B.B.S.P.D. Degree College. All Rights Reserved.</p>
 </footer>
 
 </body>
