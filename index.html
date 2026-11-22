@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.B.S.P.D. Degree College | Narkatiaganj</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#1e293b}
+
+header{
+background:#102b52;color:white;padding:16px 7%;
+display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap
+}
+.logo{font-size:22px;font-weight:bold}
+.logo span{display:block;font-size:12px;color:#d6e5ff;margin-top:5px}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#f5c451}
+
+/* COLLEGE PHOTO HERO */
+.hero{
+padding:120px 8%;
+min-height:550px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+color:white;
+background:
+linear-gradient(rgba(8,24,48,.65),rgba(8,24,48,.72)),
+url('college.png');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+.hero small{color:#f5c451;font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:46px;max-width:900px;margin:20px 0;line-height:1.2}
+.hero p{max-width:650px;line-height:1.8;color:#e3edff;font-size:17px}
+
+.btn{
+display:inline-block;margin-top:25px;background:#f2bd42;color:#102b52;
+padding:14px 24px;border-radius:5px;text-decoration:none;font-weight:bold
+}
+.btn:hover{background:#ffcf60}
+
+section{padding:70px 8%}
+.heading{text-align:center;margin-bottom:40px}
+.heading h2{font-size:32px;color:#102b52;margin-bottom:12px}
+.heading p{color:#64748b}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.about-box{background:white;padding:35px;border-radius:12px;box-shadow:0 4px 20px #00000008}
+.about-box h3{color:#174d88;margin-bottom:18px}
+.about-box p{line-height:1.8;color:#475569}
+
+.blue{background:#eaf1fb}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:white;padding:28px;border-radius:12px;box-shadow:0 4px 20px #00000008}
+.card h3{color:#174d88;margin-bottom:15px}
+.card p{line-height:1.7;color:#64748b}
+.notice{border-left:4px solid #e9b638}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 20px #00000008}
+.contact-card h3{color:#174d88;margin-bottom:15px}
+.contact-card p{line-height:2;color:#475569}
+.contact-card a{color:#174d88;text-decoration:none}
+
+footer{background:#102b52;color:white;padding:40px 8%;text-align:center}
+footer p{margin-top:10px;color:#cbd5e1;line-height:1.7}
+
+@media(max-width:700px){
+header{gap:18px}
+nav{gap:12px}
+.hero{padding:80px 7%;min-height:450px}
+.hero h1{font-size:32px}
+.hero p{font-size:15px}
+section{padding:50px 7%}
+.about,.contact-grid{grid-template-columns:1fr}
+.heading h2{font-size:27px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+B.B.S.P.D. Degree College
+<span>Narkatiaganj, West Champaran, Bihar</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#admission">Admission</a>
+<a href="#notices">Notices</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+<small>WELCOME TO OUR COLLEGE</small>
+<h1>Brij Bihari Sahay Prabhawati Devi Degree College</h1>
+<p>A place dedicated to learning, knowledge, academic growth and the development of students.</p>
+<a class="btn" href="#about">Explore Our College</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="heading">
+<h2>About Our College</h2>
+<p>Education • Knowledge • Opportunity</p>
+</div>
+
+<div class="about">
+<div class="about-box">
+<h3>Welcome to B.B.S.P.D. Degree College</h3>
+<p>
+Brij Bihari Sahay Prabhawati Devi Degree College,
+Narkatiaganj, West Champaran, Bihar, is an educational
+institution dedicated to providing learning opportunities
+and encouraging students to pursue their academic goals.
+</p>
+<p style="margin-top:15px">
+Our aim is to encourage knowledge, discipline, academic
+development and a positive learning environment.
+</p>
+</div>
+
+<div class="about-box blue">
+<h3>Our Vision</h3>
+<p>
+To encourage education, nurture talent, develop knowledge
+and provide students with opportunities for personal and
+academic growth.
+</p>
+</div>
+</div>
+</section>
+
+<!-- COURSES -->
+<section class="blue" id="courses">
+<div class="heading">
+<h2>Academic Programmes</h2>
+<p>Explore the academic opportunities available at our college.</p>
+</div>
+
+<div class="cards">
+<div class="card">
+<h3>Bachelor of Arts (B.A.)</h3>
+<p>Undergraduate studies in humanities and social sciences, subject to the college's available programmes.</p>
+</div>
+
+<div class="card">
+<h3>Bachelor of Commerce (B.Com.)</h3>
+<p>Undergraduate studies in commerce and related academic disciplines, subject to availability.</p>
+</div>
+</div>
+</section>
+
+<!-- ADMISSION -->
+<section id="admission">
+<div class="heading">
+<h2>Admission Information</h2>
+<p>Start your academic journey with us.</p>
+</div>
+
+<div class="about-box">
+<h3>Admissions</h3>
+<p style="margin-top:15px;line-height:1.8">
+Admission information, eligibility requirements, available
+subjects, application procedures and dates will be announced
+through official college notices.
+</p>
+<a class="btn" href="#contact">Contact College</a>
+</div>
+</section>
+
+<!-- NOTICE -->
+<section class="blue" id="notices">
+<div class="heading">
+<h2>Notice Board</h2>
+<p>College announcements and important information</p>
+</div>
+
+<div class="cards">
+<div class="card notice">
+<h3>Official Notices</h3>
+<p>Admission updates, academic announcements and important notices will be published here.</p>
+</div>
+
+<div class="card notice">
+<h3>Student Updates</h3>
+<p>Students are advised to keep checking the college website for updates and announcements.</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="heading">
+<h2>Contact Us</h2>
+<p>We welcome your enquiries.</p>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+<h3>College Address</h3>
+<p>
+Brij Bihari Sahay Prabhawati Devi Degree College<br>
+Narkatiaganj, West Champaran<br>
+Bihar, India
+</p>
+</div>
+
+<div class="contact-card">
+<h3>Contact Numbers</h3>
+<p>
+<a href="tel:9508462733">9508462733</a><br>
+<a href="tel:7766033389">7766033389</a><br>
+<a href="tel:7488220464">7488220464</a>
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<h3>B.B.S.P.D. Degree College, Narkatiaganj</h3>
+<p>West Champaran, Bihar, India</p>
+<p>Education • Knowledge • Opportunity</p>
+<p style="margin-top:20px">&copy; 2026 B.B.S.P.D. Degree College. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
